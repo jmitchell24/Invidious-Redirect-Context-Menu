@@ -1,27 +1,27 @@
 {
-	"manifest_version"	: 2,
-	"name"				: "Invidious Redirect (Context Menu)",
-	"description"		: "Provides a context menu item that will redirect Youtube links to Invidious.",
-	"author"            : "James Mitchell",
-	"homepage_url"      : "https://github.com/jmitchell24/Invidious-Redirect-Context-Menu",
-	"version"			: "0.0.1",
-	"permissions"		: ["contextMenus"],
-	
-	"icons": {
-		"16": "icons/icon-16.png",
-		"32": "icons/icon-32.png",
-		"48": "icons/icon-48.png",
-		"64": "icons/icon-64.png"
-	},
-	
-	"background": {
-		"scripts": ["background-script.js"]
-	},
-	
-	"content_scripts": [
-		{
-			"matches": ["<all_urls>"],
-			"js": ["content-script.js"]
-		}
-	]
+    "manifest_version"  : 2,
+    "name"              : "Invidious Redirect (Context Menu)",
+    "description"       : "Provides a context menu item that will redirect Youtube links to Invidious.",
+    "author"            : "James Mitchell",
+    "homepage_url"      : "https://github.com/jmitchell24/Invidious-Redirect-Context-Menu",
+    "version"           : "0.0.1",
+    "permissions"       : ["contextMenus"],
+    
+    "icons": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "64": "icons/icon-64.png"
+    },
+    
+    "background": {
+        "scripts": ["background-script.js"]
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ]
 }
