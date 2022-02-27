@@ -40,7 +40,7 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
     var watchID = getYoutubeID(info.linkUrl);   
   
     if (watchID !== null) {
-        var invidiousUrl = "https://www.invidio.us/watch?v=" + watchID;
+        var invidiousUrl = "https://redirect.invidious.io/watch?v=" + watchID;
 
         switch (info.menuItemId) {
             case "invidious-url-open-here"           : sendMessage("action-open-url", invidiousUrl); break;
